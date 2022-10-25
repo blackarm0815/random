@@ -3,6 +3,9 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <style>
+      body {
+        background-color: black;
+      }
     </style>
   </head>
   <body>
@@ -10,37 +13,78 @@
     </div>
     <script>
       const svgButton = (
+        color,
+        text,
+        width,
         xPos,
         yPos,
-        canvasNumber,
-        color,
       ) => {
-        var regularDiv = document.getElementById("main");
+        const border = 4;
+        const corner = 30;
+        const height = 100;
+        let polygonPoints = '';
+        const regularDiv = document.getElementById("main");
+        const xmlns = "http://www.w3.org/2000/svg";
         // canvas
-        var xmlns = "http://www.w3.org/2000/svg";
-        var svgCanvas = document.createElementNS(xmlns, "svg");
-        svgCanvas.id = `svgCanvas_${canvasNumber}`;
+        const svgCanvas = document.createElementNS(xmlns, "svg");
         svgCanvas.style.left = `${xPos}px`;
         svgCanvas.style.top = `${yPos}px`;
-        svgCanvas.style.width = '100px';
+        svgCanvas.style.width = `${width}px`;
         svgCanvas.style.height = '100px';
         svgCanvas.style.display = "block";
         svgCanvas.style.position = 'absolute';
         regularDiv.appendChild(svgCanvas);
-        // square
-        let newRect = document.createElementNS(xmlns, "rect");
-        newRect.setAttribute("x", "0");
-        newRect.setAttribute("y", "0");
-        newRect.setAttribute("width", "100");
-        newRect.setAttribute("height", "100");
-        newRect.setAttribute("fill", color);
-        newRect.style.cursor = 'pointer';
-        svgCanvas.appendChild(newRect);
+        // polygon red background
+        const polygonBack = document.createElementNS(xmlns,'polygon');
+        polygonPoints = '';
+        polygonPoints += `${0},${0} `;
+        polygonPoints += `${width},${0} `;
+        polygonPoints += `${width},${height - corner} `;
+        polygonPoints += `${width - corner},${height} `;
+        polygonPoints += `${0},${height} `;
+        polygonBack.setAttribute("points", polygonPoints);
+        polygonBack.setAttribute("fill", "red");
+        svgCanvas.appendChild(polygonBack);
+        // polygon black foreground
+        const polygonFront = document.createElementNS(xmlns,'polygon');
+        polygonPoints = '';
+        polygonPoints += `${border},${border} `;
+        polygonPoints += `${width - border},${border} `;
+        polygonPoints += `${width - border},${height - corner - border} `;
+        polygonPoints += `${width - corner - border},${height - border} `;
+        polygonPoints += `${border},${height - border} `;
+        polygonFront.setAttribute("points", polygonPoints);
+        polygonFront.setAttribute("fill", "black");
+        svgCanvas.appendChild(polygonFront);
+        // text
+        const txt = document.createElementNS(xmlns, 'text');
+        txt.setAttribute('x', 20);
+        txt.setAttribute('y', 65);
+        txt.setAttribute('font-size','50');
+        txt.setAttribute("fill", "red");
+        txt.setAttribute("font-family", "monospace");
+        txt.innerHTML = text;
+        svgCanvas.appendChild(txt);
+        // clickable
+        svgCanvas.style.cursor = 'pointer';
+        svgCanvas.addEventListener('click', () => {
+          console.log('clicked');
+        });
       };
-      svgButton(10,10,0,'#aabbcc');
-      svgButton(115,10,1,'#ccddee');
-      svgButton(10,115,2,'#eeffaa');
-      svgButton(115,115,3,'#5aaee');
+      const boxHeight = 105;
+      let boxText = '';
+      const boxWidth = 405;
+      let count = 0;
+      const space = 50;
+      for (let x = 0; x < 5; x += 1) {
+        for (let y = 0; y < 5; y += 1) {
+          let calcX = space + (x * (boxWidth + space));
+          let calcY = space + (y * (boxHeight + space));
+          boxText = `BOX${count.toString()}`;
+          svgButton('#aabbcc', boxText, 400, calcX, calcY);
+          count += 1;
+        }
+      }
     </script>
   </body>
 </html>
