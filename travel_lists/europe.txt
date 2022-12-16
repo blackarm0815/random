@@ -10,6 +10,7 @@ headphones
 
 carry luggage
 =============
+alcohol wipes
 laptop
 laptop charger
 usb c to usb c cable
@@ -26,3 +27,5 @@ clothes
 nail clippers
 comb
 scissors
+soap
+small towel
