@@ -3,7 +3,7 @@ on person
 document pouch
  - paperwork
  - passport
- - azaria sim card
+ - sim card
 wallet
 keys
 phone
