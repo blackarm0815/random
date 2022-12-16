@@ -10,10 +10,8 @@ headphones
 
 carry luggage
 =============
-wash bag
- - nail clippers
- - comb
- - scissors
+toothbrush/toothpaste
+earplugs
 alcohol wipes
 laptop
 laptop charger
@@ -21,16 +19,16 @@ usb c to usb c cable
 usb a male to usb c female adaptor
 usb c male to usb a female adaptor
 usb memory stick
-toothbrush/toothpaste
 origami kit
 reading glasses
 
 hold luggage
 ============
+wash bag
+ - nail clippers
+ - comb
+ - scissors
 clothes
-nail clippers
-comb
-scissors
 soap
 small towel
 
