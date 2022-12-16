@@ -1,12 +1,3 @@
-hold luggage
-============
-
-clothes
-toothbrush/toothpaste
-nail clippers
-origami kit
-reading glasses
-
 on person
 =========
 document pouch
@@ -25,3 +16,13 @@ usb c to usb c cable
 usb a male to usb c female adaptor
 usb c male to usb a female adaptor
 usb memory stick
+toothbrush/toothpaste
+origami kit
+reading glasses
+
+hold luggage
+============
+clothes
+nail clippers
+comb
+scissors
