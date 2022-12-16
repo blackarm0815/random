@@ -34,3 +34,4 @@ soap
 in car
 ======
 emergency sleeping bag
+snacks
