@@ -22,6 +22,7 @@ usb memory stick
 origami kit
 reading glasses
 water bottle
+soap
 
 hold luggage
 ============
@@ -30,7 +31,6 @@ wash bag
  - comb
  - scissors
 clothes
-soap
 
 in car
 ======
