@@ -1,8 +1,9 @@
 on person
 =========
 document pouch
-paperwork
-passport
+ - paperwork
+ - passport
+ - azaria sim card
 wallet
 keys
 phone
