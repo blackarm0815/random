@@ -10,6 +10,10 @@ headphones
 
 carry luggage
 =============
+wash bag
+ - nail clippers
+ - comb
+ - scissors
 alcohol wipes
 laptop
 laptop charger
@@ -29,3 +33,7 @@ comb
 scissors
 soap
 small towel
+
+in car
+======
+emergency sleeping bag
