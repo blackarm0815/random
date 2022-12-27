@@ -3,7 +3,6 @@ on person
 document pouch
  - paperwork
  - passport
- - sim card
 wallet
 keys
 phone
@@ -14,12 +13,9 @@ carry luggage
 toothbrush/toothpaste
 earplugs
 alcohol wipes
-laptop
-laptop charger
-usb c to usb c cable
-usb a male to usb c female adaptor
-usb c male to usb a female adaptor
-usb memory stick
+mains usb charger
+usb a to usb c cable
+euro plug adaptor
 origami kit
 reading glasses
 water bottle
