@@ -3,23 +3,23 @@ on person
 document pouch
  - paperwork
  - passport
-wallet
+headphones
 keys
 phone
-headphones
+wallet
 
 carry luggage
 =============
-toothbrush/toothpaste
-earplugs
 alcohol wipes
-mains usb charger
-usb a to usb c cable
+earplugs
 euro plug adaptor
+mains usb charger
 origami kit
 reading glasses
-water bottle
 soap
+toothbrush/toothpaste
+usb a to usb c cable
+water bottle
 
 hold luggage
 ============
